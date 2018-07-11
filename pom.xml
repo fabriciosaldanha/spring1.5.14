@@ -6,7 +6,7 @@
 	<groupId>br.mp.mppa</groupId>
 	<artifactId>teste.1.5.14</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>${packagingType}</packaging>
 
 	<name>teste.1.5.14</name>
 	<description>Demo project for Spring Boot</description>
@@ -62,6 +62,7 @@
 			<id>EmbbedTomcat</id>
 			<properties>
 				<activeProfile>EmbbedTomcat</activeProfile>
+				<packagingType>jar</packagingType>
 			</properties>
 			<dependencies>
 				<dependency>
@@ -74,6 +75,7 @@
 			<id>JbossEAP64</id>
 			<properties>
 				<activeProfile>JbossEAP64</activeProfile>
+				<packagingType>war</packagingType>
 			</properties>
 			<dependencies>
 				<dependency>
